@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Louis George Café', sans-serif;
+  font-family: 'Louis George Café Light', sans-serif;
+}
+body {
+  font-family: "Louis George Café";
+}
+@import "variable";
+
+@import "navLeft";
+@import "content";
+@import "navBottom";
+.container {
+  background-color: $background-color;
+  width: 1920px;
+  height: 1080px;
+  margin: 0 auto;
+
+}
+.main{
+  display: flex;
+  justify-content: flex-start;
+}

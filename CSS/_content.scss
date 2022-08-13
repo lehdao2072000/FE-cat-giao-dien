@@ -1,0 +1,237 @@
+.content {
+  padding-left: 30px;
+  padding-top: 55px;
+  width: 100rem;
+  overflow: hidden;
+  .content-search {
+    display: flex;
+    justify-content: space-between;
+    .search {
+      i {
+        width: 14px;
+        height: 14px;
+        font-weight: bold;
+      }
+      .search-text {
+        text-align: left;
+        font: normal normal bold 16px/21px "Louis George Café";
+        letter-spacing: 0.8px;
+        color: #000000;
+        opacity: 0.4;
+        border: none;
+        padding: 7px;
+        min-width: 20rem;
+      }
+    }
+    .messages {
+      padding-right: 60px;
+      .mess_button {
+        text-align: left;
+        font: normal normal bold 18px/24px "Louis George Café";
+        letter-spacing: 0.36px;
+        border: 4px solid #5f77fb;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 15px;
+        &:hover {
+          color: #fff;
+          background-color: #5f77fb;
+        }
+      }
+      span {
+        margin-left: 13px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+  .content-header {
+    height: 35px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    .content-header_color {
+      font: normal normal bold 26px/35px "Louis George Café";
+      text-align: left;
+      letter-spacing: 0.52px;
+      color: #000000;
+      opacity: 1;
+    }
+    .content-header_arrow {
+      padding-right: 60px;
+      .btn-arrow {
+        margin-left: 10px;
+        border: none;
+        background-color: $background-color-private;
+        i {
+          font-size: 18px;
+          font-weight: bold;
+          color: black;
+        }
+        &:hover {
+          i {
+            color: blue;
+          }
+        }
+      }
+    }
+  }
+  .content-categorys {
+    padding-bottom: 10px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    .product {
+      margin-right: 3rem;
+      border-radius: 12px;
+      img {
+        width: 320px;
+        height: 320px;
+      }
+      .p--Header {
+        margin-top: 28px;
+        text-align: left;
+        font: normal normal 900 26px/35px Louis George Café;
+
+        letter-spacing: 0.44px;
+        color: #000000;
+        opacity: 1;
+        height: 30px;
+        line-height: 30px;
+      }
+      .p--title {
+        text-align: left;
+        font-size: 18px;
+        letter-spacing: 0.9px;
+        color: #000000;
+        opacity: 0.5;
+        font-weight: bold;
+        height: 24px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .content-bottom {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+    .popular-header {
+      margin-bottom: 20px;
+      height: 35px;
+      text-align: left;
+      font: normal normal bold 26px/35px "Louis George Café";
+      letter-spacing: 0.52px;
+      color: #000000;
+      text-transform: capitalize;
+      opacity: 1;
+    }
+    .popular {
+      min-width: 40rem;
+      .listMusic {
+        display: flex;
+        justify-content: space-between;
+        margin: 33px auto;
+        .listMusic_left {
+          display: flex;
+          flex-direction: row;
+          i {
+            font-size: 30px;
+            text-align: center;
+            margin-right: 3rem;
+            padding-top: 15px;
+          }
+          img {
+            margin-right: 1rem;
+          }
+          .listMusic_text {
+            margin-top: 10px;
+            p {
+              text-align: left;
+              font: normal normal bold 18px/24px "Louis George Café";
+              letter-spacing: 0.36px;
+              color: #000000;
+              opacity: 1;
+              height: 24px;
+              line-height: 24px;
+            }
+            small {
+              text-align: left;
+              font: normal normal normal 16px/21px Louis George Café;
+              letter-spacing: 0.8px;
+              color: #000000;
+              opacity: 0.5;
+              height: 21px;
+              line-height: 21px;
+            }
+          }
+        }
+        .listMusic_tym {
+          span {
+            text-align: left;
+            font: normal normal normal 16px/21px "Louis George Café";
+            letter-spacing: 0.8px;
+            color: #000000;
+            opacity: 0.5;
+          }
+          span + span {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .Recomment {
+      max-width: 60rem;
+      margin-left: 6rem;
+      .Recomment-flex {
+        max-height: 35px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: -5px;
+
+        .Recomment-header {
+          margin-bottom: 20px;
+          height: 35px;
+          text-align: left;
+          font: normal normal bold 26px/35px "Louis George Café";
+          letter-spacing: 0.52px;
+          color: #000000;
+          text-transform: capitalize;
+          opacity: 1;
+        }
+        .Recomment-arrow {
+          i {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            margin-left: 1rem;
+          }
+          &:hover {
+            i {
+              color: blue;
+            }
+          }
+        }
+      }
+      .products {
+        display: flex;
+        flex-direction: row;
+        
+      }
+      .product-album {
+        margin-right: 5rem;
+        img{
+          margin-bottom: 23px;
+        }
+        .product-album_text {
+          text-align: left;
+          font: normal normal bold 22px/30px "Louis George Café";
+          letter-spacing: 0.44px;
+          color: #000000;
+          opacity: 1;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
