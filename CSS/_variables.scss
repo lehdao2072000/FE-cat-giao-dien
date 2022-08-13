@@ -1,0 +1,27 @@
+$background-color-primary: #fff;
+$color-primary: #000;
+$color-white: #fff;
+$color-nav: #555555;
+$color-nav-hover:#9D60EB;
+$color-text-slider: #222222;
+
+@mixin changeButton(
+  $magrin,
+  $padding,
+  $color,
+  $background1,
+  $background2,
+  $colorboder,
+  $sizeboder
+) {
+  padding: $padding;
+  margin: $magrin;
+  color: $color;
+  border: $sizeboder solid $colorboder;
+  background-image: linear-gradient(57deg, $background1, $background2);
+}
+@mixin changeText($color, $size, $fontweight) {
+  color: $color;
+  font-size: $size;
+  font-weight: $fontweight;
+}

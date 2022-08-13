@@ -1,0 +1,173 @@
+@import "variables";
+@import "StylePublic";
+body {
+  font-family: "Poppins";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// start header
+.header {
+  padding-top: 40px;
+  .nav {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    &__logo {
+      width: 142px;
+      height: 42px;
+      margin-top: 10px;
+    }
+    &__ul {
+      display: flex;
+      flex-direction: row;
+      &-li {
+        text-align: center;
+        margin-left: 35px;
+        padding-top: 10px;
+        @include changeText($color-nav, 14px, nomal);
+        &:hover {
+          color: $color-nav-hover;
+        }
+        &--search {
+          border: 1px solid #c6baf8;
+          border-radius: 2px;
+          margin: 0 35px;
+          padding: 12px;
+          border-radius: 5px;
+          input {
+            border: none;
+            outline: none;
+            i {
+              color: blue;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__slider {
+    &--text1 {
+      @include changeText($color-text-slider, 46px, 600);
+      margin-top: 37px;
+      margin-bottom: 0;
+    }
+    &--text2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      @include changeText($color-text-slider, 46px, nomal);
+    }
+    &--title {
+      @include changeText($color-nav, 14px, nomal);
+      max-width: 530px;
+      margin: 0 auto;
+      line-height: 20px;
+    }
+    &-button {
+      margin-top: 20px;
+      margin-bottom: 35px;
+
+      .active {
+        @include changeButton(
+          0,
+          15px 30px,
+          #6362d7,
+          $background-color-primary,
+          $background-color-primary,
+          #6362d7,
+          2px
+        );
+        color: $color-nav-hover;
+        border-radius: 5px;
+      }
+    }
+    &-header{
+        margin-bottom: 40px;
+        &--text{
+            margin-bottom: 5px;
+        }
+    }
+  }
+  .backgroungBottom {
+    height: 90px;
+    background: transparent linear-gradient(13deg, #ffffff 0%, #aad7ff 100%) 0%
+      0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: -65px;
+  }
+}
+//end header
+
+//start section
+.section {
+  margin-top: 170px;
+  &__header {
+    margin-bottom: 110px;
+    .content {
+      display: flex;
+      justify-items: center;
+      justify-content: space-around;
+      img {
+        width: 454px;
+        height: 391px;
+      }
+      &__items {
+        max-width: 485px;
+        &--header {
+          margin: 64px 0 5px 0;
+        }
+        &--styleWeight {
+          margin: 0;
+        }
+        &--title {
+          margin: 20px 0 0 0;
+        }
+        &--button {
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+  &__slider {
+    .listItems {
+      display: flex;
+      justify-items: center;
+      justify-content: space-around;
+      margin-top: 40px;
+      &__item {
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        width: 350px;
+        height: 440px;
+        box-shadow: 0px 10px 30px #99999933;
+        border-radius: 8px;
+        padding-top: 40px;
+        padding-bottom: 53px;
+        img {
+          margin: 0 auto;
+        }
+        &-header {
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        &-title {
+          
+          width: 252px;
+          margin: 0 auto;
+        }
+      }
+    }
+    &-arrows{
+        margin-top: 30px;
+        &--left{
+            margin-right: 30px;
+        }
+    }
+    
+  }
+}
+//end section

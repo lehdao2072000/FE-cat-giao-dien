@@ -1,0 +1,88 @@
+.layout--center {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+.magrin-center {
+  margin: 0 auto;
+  max-width: 1170px;
+  background-color: $background-color-primary;
+}
+.textAlign {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+.style__button {
+  @include changeButton(0, 12px, $color-white, #6362d7, #ff8fe2, #6362d7, 2px);
+  border-radius: 5px;
+  @include changeText($color-white, 14px, nomal);
+  &:hover {
+    @include changeButton(
+      0,
+      12px,
+      #6362d7,
+      $background-color-primary,
+      $background-color-primary,
+      #6362d7,
+      2px
+    );
+  }
+}
+.styleButton-public {
+  padding: 28px 14px;
+  @include changeText($color-white, 15px, nomal);
+  @include changeButton(
+    0,
+    15px 30px,
+    $color-white,
+    #6362d7,
+    #ff8fe2,
+    #6362d7,
+    2px
+  );
+  border-radius: 5px;
+  @include changeText($color-white, 15px, nomal);
+  &:hover {
+    @include changeButton(
+      0,
+      15px 30px,
+      #6362d7,
+      $background-color-primary,
+      $background-color-primary,
+      #6362d7,
+      2px
+    );
+    color: $color-nav-hover;
+  }
+}
+.margintop130 {
+  margin-top: 130px;
+}
+.title {
+  @include changeText($color-nav, 15px, nomal);
+  line-height: 25px;
+}
+.textHeaderChange {
+  @include changeText($color-text-slider, 36px, nomal);
+}
+.textHeaderChange-bold {
+  @include changeText($color-text-slider, 36px, 600);
+}
+.textHeaderChangesize24 {
+    @include changeText($color-text-slider, 24px, nomal);
+  }
+  .textHeaderChangesize24-bold {
+    @include changeText($color-text-slider, 24px, 600);
+  }
+  .backgroundArrows{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 30px #99999933;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    &:hover{
+        background-color: $color-nav-hover;
+    }
+  }
